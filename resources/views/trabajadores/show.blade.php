@@ -1,7 +1,37 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Detalles del Trabajador</h1>
+    <style>
+        .card {
+            width: 50%;
+            margin: 50px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            background-color: #dc3545; /* Color rojo */
+            color: #fff;
+            font-weight: bold;
+            text-align: center; /* Centra el texto */
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .btn-warning,
+        .btn-danger {
+            margin-top: 10px;
+        }
+
+        /* Estilo para cambiar el color del botón Eliminar */
+        .btn-danger {
+            background-color: #007bff; /* Color azul */
+            border-color: #007bff;
+        }
+    </style>
+
+    <h1 style="text-align: center;">Detalles del Trabajador</h1> <!-- Centra el título -->
 
     <div class="card">
         <div class="card-header">
